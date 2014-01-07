@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "CustomCell.h"
+@interface ViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+@property(nonatomic, copy)CustomCell *lCell;
 @end
